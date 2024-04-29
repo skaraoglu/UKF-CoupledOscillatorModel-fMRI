@@ -36,7 +36,6 @@ $$L_2 \ddot{\theta_{2}} =-g \sin \theta_{2}+k L_2\left(\sin \theta_{1}-\sin \the
 
 ![image](https://github.com/skaraoglu/UKF-CoupledOscillatorModel-fMRI/assets/32866050/36c78a07-3e31-4651-8d0e-da8e85da073b)
 
-
 ## fMRI Data
 
 - Voxel A & B data
