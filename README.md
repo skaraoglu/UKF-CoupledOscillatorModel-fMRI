@@ -34,6 +34,9 @@ $$L_1 \ddot{\theta_{1}} =-g \sin \theta_{1}-k L_1\left(\sin \theta_{1}-\sin \the
 
 $$L_2 \ddot{\theta_{2}} =-g \sin \theta_{2}+k L_2\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
 
+![image](https://github.com/skaraoglu/UKF-CoupledOscillatorModel-fMRI/assets/32866050/36c78a07-3e31-4651-8d0e-da8e85da073b)
+
+
 ## fMRI Data
 
 - Voxel A & B data
