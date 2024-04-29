@@ -11,18 +11,17 @@ addressing the direct challenges of noise and indirect measurement. This experim
 
 The Unscented Kalman Filter represents an advancement in filtering technology, adept at handling nonlinearities in data without necessitating linear approximations, making it particularly suited for the complex and noisy data characteristic of fMRI. Retains the exact nonlinearity of F but approximates the a posteriori probability density of the state $xt+∆t$ by a Gaussian.
 
-$ xt+∆t ≈ F(xt) + (∇′Pxx,t∇/2) F(xt) $,
+$$xt+∆t ≈ F(xt) + (∇′Pxx,t∇/2) F(xt),$$
 
-$ Pxx,t+∆t ≈ ∇F(xt) Pxx,t(∇F(xt))′ $
+$$Pxx,t+∆t ≈ ∇F(xt) Pxx,t(∇F(xt))′$$
 
 More accurate for nonlinear systems, and computationally much simpler to implement.
 
 ## New Coupled Oscillator Model - Two Coupled Pendulums
 
-The equation of motion of the combined system
-is then given by:
-$$L \ddot{\theta}_{1} =-g \sin \theta_{1}-k L\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
-$$L \ddot{\theta}_{2} =-g \sin \theta_{2}+k L\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
+The equation of motion of the combined system is then given by: 
+$$L \ddot{\theta_{1}} =-g \sin \theta_{1}-k L\left(\sin \theta_{1}-\sin \theta_{2}\right),$$
+$$L \ddot{\theta_{2}} =-g \sin \theta_{2}+k L\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
 
 There are 3 parameters in the equation:
 - g, gravity
@@ -30,8 +29,10 @@ There are 3 parameters in the equation:
 - k, spring constant
 
 without the assumption of pendulums having same length, $L_1$ and $L_2$ would replace the L in corresponding equation:
-$$L_1 \ddot{\theta}_{1} =-g \sin \theta_{1}-k L_1\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
-$$L_2 \ddot{\theta}_{2} =-g \sin \theta_{2}+k L_2\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
+
+$$L_1 \ddot{\theta_{1}} =-g \sin \theta_{1}-k L_1\left(\sin \theta_{1}-\sin \theta_{2}\right),$$
+
+$$L_2 \ddot{\theta_{2}} =-g \sin \theta_{2}+k L_2\left(\sin \theta_{1}-\sin \theta_{2}\right)$$
 
 ## fMRI Data
 
