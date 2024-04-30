@@ -426,20 +426,20 @@ plot_ukf_and_smoothed_ggplot(opt_nm_s2, smoothed_subj2, top_title = 'Nelder-Mead
 
 ### L-BFGS-B
 # Voxel A & B data
-opt_nm <- optim_params(param_guess,method="L-BFGS-B",lower_lim=-20,upper_lim=20,maxit=30,temp=20,
+opt_lbfgsb <- optim_params(param_guess,method="L-BFGS-B",lower_lim=-20,upper_lim=20,maxit=30,temp=20,
                     t_dummy,smoothed_data,new_coupled_osc_model,N_p,N_y,dt,dT)
-opt_nm$param_est   # params
-opt_nm$value # objective function value, chi-square
-plot_ukf_and_smoothed_ggplot(opt_nm, smoothed_data, top_title = 'L-BFGS-B')
+opt_lbfgsb$param_est   # params
+opt_lbfgsb$value # objective function value, chi-square
+plot_ukf_and_smoothed_ggplot(opt_lbfgsb, smoothed_data, top_title = 'L-BFGS-B')
 # ASD Subject 01
-opt_nm_s1 <- optim_params(param_guess,method="L-BFGS-B",lower_lim=-20,upper_lim=20,maxit=30,temp=20,
+opt_lbfgsb_s1 <- optim_params(param_guess,method="L-BFGS-B",lower_lim=-20,upper_lim=20,maxit=30,temp=20,
                     t_dummy,smoothed_subj1,new_coupled_osc_model,N_p,N_y,dt,dT)
-opt_nm_s1$param_est   # params
-opt_nm_s1$value # objective function value, chi-square
-plot_ukf_and_smoothed_ggplot(opt_nm_s1, smoothed_subj1, top_title = 'L-BFGS-B')
+opt_lbfgsb_s1$param_est   # params
+opt_lbfgsb_s1$value # objective function value, chi-square
+plot_ukf_and_smoothed_ggplot(opt_lbfgsb_s1, smoothed_subj1, top_title = 'L-BFGS-B')
 # Normal Subject 01
-opt_nm_s2 <- optim_params(param_guess,method="L-BFGS-B",lower_lim=-20,upper_lim=20,maxit=30,temp=20,
+opt_lbfgsb_s2 <- optim_params(param_guess,method="L-BFGS-B",lower_lim=-20,upper_lim=20,maxit=30,temp=20,
                     t_dummy,smoothed_subj2,new_coupled_osc_model,N_p,N_y,dt,dT)
-opt_nm_s2$param_est   # params
-opt_nm_s2$value # objective function value, chi-square
-plot_ukf_and_smoothed_ggplot(opt_nm_s2, smoothed_subj2, top_title = 'L-BFGS-B')
+opt_lbfgsb_s2$param_est   # params
+opt_lbfgsb_s2$value # objective function value, chi-square
+plot_ukf_and_smoothed_ggplot(opt_lbfgsb_s2, smoothed_subj2, top_title = 'L-BFGS-B')
